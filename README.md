@@ -1,6 +1,6 @@
-[Frontend Mentor Chalange](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5);
+[Frontend Mentor Chalange](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5)
 
-breakpoints:
+## Breakpoints:
 - Mobile: 375px
 - Desktop: 1440px
 
