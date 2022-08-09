@@ -1,19 +1,15 @@
 @font-face {
-    font-weight: 400;
-    font-family: "Be Vietnam Pro";
-    src: url('/assets/fonts/Be\ Vietnam\ Pro/BeVietnamPro-Regular.ttf');
+    font-weight: $reg;
+    font-family: $ff;
+    src: url('assets/fonts/Be\ Vietnam\ Pro/BeVietnamPro-Regular.ttf');
 }
 @font-face {
-    font-weight: 500;
-    font-family: "Be Vietnam Pro";
-    src: url('/assets/fonts/Be\ Vietnam\ Pro/BeVietnamPro-Medium.ttf');
+    font-weight: $med;
+    font-family: $ff;
+    src: url('assets/fonts/Be\ Vietnam\ Pro/BeVietnamPro-Medium.ttf');
 }
 @font-face {
-    font-weight: 700;
-    font-family: "Be Vietnam Pro";
-    src: url('/assets/fonts/Be\ Vietnam\ Pro/BeVietnamPro-Bold.ttf');
-}
-
-.body {
-    font-size: 16px;
+    font-weight: $bol;
+    font-family: $ff;
+    src: url('assets/fonts/Be\ Vietnam\ Pro/BeVietnamPro-Bold.ttf');
 }
