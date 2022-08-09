@@ -1,5 +1,7 @@
 [Frontend Mentor Chalange](https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5)
 
+[Deploy](https://manage-landing-flax.vercel.app/);
+
 ## Breakpoints:
 - Mobile: 375px
 - Desktop: 1440px
