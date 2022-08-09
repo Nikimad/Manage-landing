@@ -1,0 +1,2 @@
+comp:
+	npx gulp build
