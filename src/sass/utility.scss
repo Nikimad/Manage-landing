@@ -50,24 +50,59 @@
 
 .fs-prim-heading {
     font-size: $fs-prim-heading;
+    line-height: 1.1;
 }
 
 .fs-sec-heading {
     font-size: $fs-sec-heading;
+    line-height: 1.1;
 }
 
-.fs-300 {
-    font-size: $fs-300;
+@mixin font-size {
+    $font-sizes: $fs-300, $fs-400, $fs-500, $fs-600, $fs-700 ,$fs-800 ,$fs-900;
+    $i: 300;
+    $j: 1;
+    @while $i < 1000 {
+        .fs-#{$i} {
+            font-size: nth($font-sizes, $j);
+        }
+        $i: $i + 100;
+        $j: $j + 1;
+    }
+}
+@mixin padding-block {
+    $sizes: $size-100, $size-200, $size-300, $size-400, $size-500, $size-600, $size-700, $size-800, $size-900;
+    $i: 100;
+    $j: 1;
+    @while $i < 1000 {
+        .padding-block-#{$i} {
+            $size: nth($sizes, $j);
+            padding-top: $size; 
+            padding-bottom: $size;
+        }
+        $i: $i + 100;
+        $j: $j + 1;
+    }
+}
+@include font-size;
+@include padding-block;
+
+.container {
+    $max-width: 1110px;
+    $padding: 1rem;
+
+    width: min($max-width, 100% - $padding);
+    margin: 0 auto;
 }
 
-.fs-400 {
-    font-size: $fs-400;
+.even-columns {
+    display: grid;
+    gap: 1rem;
 }
 
-.fs-500 {
-    font-size: $fs-500;
-}
-
-.fs-600 {
-    font-size: $fs-600;
+@media screen and (min-width: $m-w) {
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
