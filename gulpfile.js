@@ -16,4 +16,10 @@ const buildPug = () => {
     .pipe(dest('build/'));
 }
 
-exports.build = parallel(buildSass, buildPug);
+const getAssets = () => {
+  console.log("Copy Assets");
+  return src('src/assets/**/*')
+    .pipe(dest('build/assets/'));
+}
+
+exports.build = parallel(buildSass, buildPug, getAssets);

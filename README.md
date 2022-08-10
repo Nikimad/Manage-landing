@@ -2,7 +2,7 @@
 
 [Deploy](https://manage-landing-flax.vercel.app/)
 
-[My online mentor](https://www.youtube.com/kepowob)
+[Kevin Powell - my online mentor](https://www.youtube.com/kepowob)
 
 [Andy Bell CSS-reset](https://github.com/hankchizljaw/modern-css-reset)
 
