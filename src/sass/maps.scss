@@ -1,0 +1,64 @@
+//  clrs-maps
+$clr-map-accent: (
+    "accent-100": $clr-accent-100,
+    "accent-200": $clr-accent-200,
+    "accent-300": $clr-accent-300,
+    "accent-400": $clr-accent-400,
+    "accent-500": $clr-accent-500,
+    "accent-600": $clr-accent-600,
+    "accent-700": $clr-accent-700,
+    "accent-800": $clr-accent-800,
+    "accent-900": $clr-accent-900
+);
+$clr-map-prim: (
+    "prim-100": $clr-prim-100,
+    "prim-200": $clr-prim-200,
+    "prim-300": $clr-prim-300,
+    "prim-400": $clr-prim-400,
+    "prim-500": $clr-prim-500,
+    "prim-600": $clr-prim-600,
+    "prim-700": $clr-prim-700,
+    "prim-800": $clr-prim-800,
+    "prim-900": $clr-prim-900
+);
+$clr-map-netural: (
+    "netural-100": $clr-netural-100,
+    "netural-200": $clr-netural-200,
+    "netural-300": $clr-netural-300,
+    "netural-400": $clr-netural-400,
+    "netural-500": $clr-netural-500,
+    "netural-600": $clr-netural-600,
+    "netural-700": $clr-netural-700,
+    "netural-800": $clr-netural-800,
+    "netural-900": $clr-netural-900
+);
+//  clr-map
+$clrs-maps: (
+    "clr-map-accent": $clr-map-accent,
+    "clr-map-prim": $clr-map-prim,
+    "clr-map-netural": $clr-map-netural
+);
+//  fs-map
+$fs-map:(
+    "fs-100": $fs-100,
+    "fs-200": $fs-200,
+    "fs-300": $fs-300,
+    "fs-400": $fs-400,
+    "fs-500": $fs-500,
+    "fs-600": $fs-600,
+    "fs-700": $fs-700,
+    "fs-800": $fs-800,
+    "fs-900": $fs-900
+);
+//  sizes-map
+$sizes-map: (
+    "100": $size-100,
+    "200": $size-200,
+    "300": $size-300,
+    "400": $size-400,
+    "500": $size-500,
+    "600": $size-600,
+    "700": $size-700,
+    "800": $size-800,
+    "900": $size-900
+);

@@ -1,51 +1,43 @@
-.text-prim-400 {
-    color: $clr-prim-400;
+@each $list-name, $map in $clrs-maps {
+    @each $name, $color in $map {
+        .text-#{$name} {
+            color: $color;
+        }
+    }
+    @each $name, $color in $map {
+        .bg-#{$name} {
+            background-color: $color;
+        }
+    }
+}
+@each $name, $f-size in $fs-map {
+    .#{$name} {
+        font-size: $f-size;
+    }
+}
+@each $name, $size in $sizes-map {
+    .padding-y-#{$name} {
+        padding-top: $size;
+        padding-bottom: $size;
+    }
+}
+@each $name, $size in $sizes-map {
+    .padding-x-#{$name} {
+        padding-left: $size;
+        padding-right: $size;
+    }
 }
 
-.text-accent-400 {
-    color: $clr-accent-400;
-}
 
-.text-accent-100 {
-    color: $clr-accent-100;
-}
-
-.text-netural-100 {
-    color: $clr-netural-100
-}
-
-.text-netural-900 {
-    color: $clr-netural-900
-}
-
-.bg-prim-400 {
-    background-color: $clr-prim-400;
-}
-
-.bg-accent-400 {
-    background-color: $clr-accent-400;
-}
-
-.bg-accent-100 {
-    background-color: $clr-accent-100;
-}
-
-.bg-netural-100 {
-    background-color: $clr-netural-100;
-}
-
-.bg-netural-900 {
-    background-color: $clr-netural-900;
-}
 
 .fw-bold {
-    font-weight: $bol;
+    font-weight: $bold;
 }
 .fw-med {
-    font-weight: $med;
+    font-weight: $medium;
 }
 .fw-reg {
-    font-weight: $reg;
+    font-weight: $regular;
 }
 
 .fs-prim-heading {
@@ -57,35 +49,6 @@
     font-size: $fs-sec-heading;
     line-height: 1.1;
 }
-
-@mixin font-size {
-    $font-sizes: $fs-300, $fs-400, $fs-500, $fs-600, $fs-700 ,$fs-800 ,$fs-900;
-    $i: 300;
-    $j: 1;
-    @while $i < 1000 {
-        .fs-#{$i} {
-            font-size: nth($font-sizes, $j);
-        }
-        $i: $i + 100;
-        $j: $j + 1;
-    }
-}
-@mixin padding-block {
-    $sizes: $size-100, $size-200, $size-300, $size-400, $size-500, $size-600, $size-700, $size-800, $size-900;
-    $i: 100;
-    $j: 1;
-    @while $i < 1000 {
-        .padding-block-#{$i} {
-            $size: nth($sizes, $j);
-            padding-top: $size; 
-            padding-bottom: $size;
-        }
-        $i: $i + 100;
-        $j: $j + 1;
-    }
-}
-@include font-size;
-@include padding-block;
 
 .container {
     $max-width: 1110px;
