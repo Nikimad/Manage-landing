@@ -13,6 +13,7 @@
                     text-decoration: none;
                     color: $clr-prim-400;
                     font-weight: $medium;
+                    transition: $hover-transition;
                     &:hover,
                     &:focus {
                         color: $clr-accent-400;
@@ -22,6 +23,41 @@
         }
         .mobile-nav-toogle {
             display: none;
+            position: fixed;
+            right: $size-400;
+            top: $size-700;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 25px;
+            height: 18px;
+            .line {
+                width: 100%;
+                height: 3px;
+        
+                transition: 0.3s;
+        
+                &:nth-child(2) {
+                    transform-origin: right center;
+                }
+                &:nth-child(3) {
+                    transform-origin: left center;
+                }
+            }
+            &.open {
+                .line {
+                    &:nth-child(1) {
+                        transform: translate(0px, 8px) rotate(45deg);
+                    }
+                    &:nth-child(2) {
+                        width: 0%;
+                        opacity: 0;
+                    }
+                    &:nth-child(3) {
+                        transform: translate(3px, 2px) rotate(-45deg);
+                    }
+                }
+            }
         }
     }
 }
@@ -35,6 +71,7 @@
             position: fixed;
             inset: 0;
             background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+            animation: appear $apear-transition;
         }
         .nav-wrapper {
             .prim-nav {
@@ -50,6 +87,7 @@
                 padding: $size-700;
                 &[data-visible] {
                     display: block;
+                    animation: appear $apear-transition;
                 }
                 .nav-list {
                     display: grid;
@@ -62,5 +100,12 @@
                 display: flex;
             }
         }
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
     }
 }

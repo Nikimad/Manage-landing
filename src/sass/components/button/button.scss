@@ -4,7 +4,7 @@ button {
     text-decoration: none;
     border: 0;
     background-color: transparent;
-    transition: 0.3s;
+    transition: $hover-transition;
 }
 .button {
     border-radius: 100vmax;

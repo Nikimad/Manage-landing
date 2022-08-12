@@ -64,6 +64,9 @@ $size-600: 2rem;
 $size-700: 3rem;
 $size-800: 4rem;
 $size-900: 5rem;
+//  transition
+$hover-transition: 0.3s;
+$apear-transition: 0.5s;
 //  Mobile
 $m-w: 50em;
 @media screen and (min-width: $m-w) {
