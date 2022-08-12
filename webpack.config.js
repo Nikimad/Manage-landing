@@ -3,6 +3,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin= require('copy-webpack-plugin');
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
@@ -24,7 +25,22 @@ const config = {
     new HtmlWebpackPlugin({
       template: "src/pug/pages/index.pug",
     }),
-
+    new CopyPlugin({
+      patterns: [
+      {
+        from: './src/assets/fonts',
+        to: './assets/fonts'
+      },
+      {
+        from: './src/assets/svg',
+        to: './assets/svg'
+      },
+      {
+        from: './src/assets/png',
+        to: './assets/png'
+      },
+      ]
+    })
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],

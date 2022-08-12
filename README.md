@@ -17,8 +17,3 @@
 - SASS
 - PUG
 - Webpack
-
-
-##  TODO list
-
-- assets
