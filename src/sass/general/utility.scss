@@ -83,3 +83,12 @@
   white-space: nowrap !important;
   border: 0 !important;
 }
+//
+.display-sm-none {
+    display: none;
+}
+@media screen and (min-width: $m-w) {
+    .display-md-inline-flex {
+        display: inline-flex;
+    }
+}

@@ -1,4 +1,7 @@
 .mobile-nav-toogle {
+    position: fixed;
+    right: $size-400;
+    top: $size-700;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
