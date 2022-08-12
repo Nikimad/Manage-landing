@@ -16,4 +16,9 @@
 - CSS
 - SASS
 - PUG
-- Gulp
+- Webpack
+
+
+##  TODO list
+
+- assets
