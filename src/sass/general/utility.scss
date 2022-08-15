@@ -64,8 +64,6 @@
     margin: 0 auto;
 }
 
-
-
 .even-columns {
     display: grid;
     gap: 1rem;
@@ -98,5 +96,43 @@
 @media screen and (min-width: $m-w) {
     .display-md-inline-flex {
         display: inline-flex;
+    }
+}
+
+.justify-self-end  {
+    justify-self: end; 
+}
+.vertical-align-center {
+    align-items: center;
+}
+
+
+.cta {
+    position: relative;
+    isolation: isolate;
+    text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: 
+            url('../assets/svg/bg-tablet-pattern.svg'),
+            url('../assets/svg/bg-tablet-pattern.svg');
+        background-position: 15rem -2rem, 76rem -20rem;
+        background-repeat: no-repeat;
+        background-size: 30rem, 30rem;
+        z-index: -1;
+        opacity: 0.1;
+    }
+}
+
+@media screen and (min-width: $m-w) {
+    .cta {
+        text-align: left;
+    }
+
+    .justify-self-end-md  {
+        justify-self: end; 
     }
 }
