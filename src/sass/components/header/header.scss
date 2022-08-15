@@ -7,7 +7,7 @@
         .prim-nav {
             .nav-list {
                 display: flex;
-                gap: clamp($size-200, 5vw, $size-700);
+                gap: clamp($size-200, 5vw, $size-600);
                 font-size: $fs-nav;
                 & a {
                     text-decoration: none;
