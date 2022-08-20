@@ -1,22 +1,33 @@
-footer.bg-netural-900.text-netural-100.padding-y-700
+footer.prim-footer.bg-netural-900.text-netural-100.padding-y-700
     div.container
-        div.even-columns
-            div 
-                a(href="#")
-                    img(src="assets/svg/logo.svg" alt="manage")
-                ul(role="list" aria-label="Social-links")
+        div.prim-footer-wrapper
+            div.prim-footer-logo-social 
+                a(href="#" aria-label="home")
+                    svg.logo(width="146" height="24")
+                        use(xlink:href="assets/svg/logo-light.svg#logo")
+                ul.social-list(role="list" aria-label="Social-links")
                     li
                         a(href="#" aria-label="facebook") 
+                            svg.social-icon
+                                use(xlink:href="assets/svg/social-icons.svg#icon-facebook")
                     li
                         a(href="#" aria-label="youtube")
+                            svg.social-icon
+                                use(xlink:href="assets/svg/social-icons.svg#icon-youtube")
                     li 
                         a(href="#" aria-label="twitter")
+                            svg.social-icon
+                                use(xlink:href="assets/svg/social-icons.svg#icon-twitter")
                     li 
                         a(href="#" aria-label="pinterest")
+                            svg.social-icon
+                                use(xlink:href="assets/svg/social-icons.svg#icon-pinterest")
                     li 
                         a(href="#" aria-label="instagram")
+                            svg.social-icon
+                                use(xlink:href="assets/svg/social-icons.svg#icon-instagram")
             div
-                nav.footer-nav 
+                nav.prim-footer-nav 
                     ul.flow-100(role='list' aria-label="Footer")
                         li
                             a(href="") Home 
@@ -32,8 +43,8 @@ footer.bg-netural-900.text-netural-100.padding-y-700
                             a(href="") Community 
                         li
                             a(href="") Privacy Policy  
-            div
+            div.prim-footer-form
                 form(action="")
                     input(type="email")
-                    button.button Go 
-                    p Copyright 2020. All Rights Reserved
+                    button.button(data-shadow="none") Go 
+                p Copyright 2020. All Rights Reserved

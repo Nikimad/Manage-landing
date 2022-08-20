@@ -2,7 +2,8 @@ header.prim-header
     div.container
         div.nav-wrapper
             a(href="#")
-                img(src="assets/svg/logo.svg" alt="manage")
+                svg.logo(width="146" height="24")
+                    use(xlink:href="assets/svg/logo.svg#logo")
             include navigation/toogle.pug
             include navigation/nav.pug
             button.button.display-sm-none.display-md-inline-flex Get Started

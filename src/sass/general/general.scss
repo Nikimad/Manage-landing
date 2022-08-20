@@ -19,3 +19,8 @@ p[data-width="wide"] {
     max-width: 41ch;
 }
 
+input:where([type="text"], [type="email"]) {
+    border-radius: 100vw;
+    border: 0;
+    padding: $size-300 $size-400;
+}

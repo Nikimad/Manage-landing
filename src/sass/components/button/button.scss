@@ -29,7 +29,10 @@ button {
         &:focus-visible {
             background-color: $clr-netural-100;
             color: $clr-accent-300;
+        }
     }
 
+    &[data-shadow = "none"] {
+        box-shadow: none;
     }
 }
