@@ -19,6 +19,12 @@ p[data-width="wide"] {
     max-width: 41ch;
 }
 
+@media screen and (max-width: $m-w) {
+    p[data-width="wide"] {
+        max-width: 100%;
+    }  
+}
+
 input:where([type="text"], [type="email"]) {
     border-radius: 100vw;
     border: 0;

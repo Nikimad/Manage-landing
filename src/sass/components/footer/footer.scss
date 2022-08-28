@@ -1,4 +1,50 @@
+.prim-footer {
+    &-wrapper {
+        display: grid;
+        gap: $size-700;
+        grid-template-areas: 
+        'form'
+        'nav'
+        'logo-social';
 
+        .prim-footer-logo-social {
+            grid-area: logo-social;
+    
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: $size-700;
+        }
+        
+        .prim-footer-nav {
+            grid-area: nav;
+    
+            columns: 2;
+            gap: clamp($size-200, 30vw, $size-900);
+    
+            & a {
+                color: $clr-netural-100;
+                text-decoration: none;
+                transition: $hover-transition;
+            }
+            & a:where(:hover, :focus) {
+                color: $clr-accent-400;
+            }
+         
+        }
+        .prim-footer-form {
+            grid-area: form;
+    
+            display: grid;
+            align-content: space-between;
+    
+            form {
+                display: flex;
+                gap: $size-400;
+            }
+        }
+    }
+}
 
 .social-list {
     display: flex;
@@ -18,51 +64,6 @@
     }
 }
 
-.prim-footer-wrapper {
-    display: grid;
-    gap: $size-700;
-    grid-template-areas: 
-    'form'
-    'nav'
-    'logo-social';
-
-    .prim-footer-logo-social {
-        grid-area: logo-social;
-
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: $size-700;
-    }
-    
-    .prim-footer-nav {
-        grid-area: nav;
-
-        columns: 2;
-        gap: clamp($size-200, 30vw, $size-900);
-
-        & a {
-            color: $clr-netural-100;
-            text-decoration: none;
-            transition: $hover-transition;
-        }
-        & a:where(:hover, :focus) {
-            color: $clr-accent-400;
-        }
-     
-    }
-    .prim-footer-form {
-        grid-area: form;
-
-        display: grid;
-        align-content: space-between;
-
-        form {
-            display: flex;
-            gap: $size-400;
-        }
-    }
-}
 
 @media screen and (max-width: $m-w) {
     .prim-footer-wrapper {
