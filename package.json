@@ -43,5 +43,8 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.10.0",
     "workbox-webpack-plugin": "^6.5.4"
+  },
+  "dependencies": {
+    "a11y-slider": "^0.4.15"
   }
 }

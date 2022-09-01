@@ -15,7 +15,8 @@ p:not([class]) {
     max-width: 32ch;
 }
 
-p[data-width="wide"] {
+p[data-width="wide"],
+p[data-width="wide-1"] {
     max-width: 41ch;
 }
 
